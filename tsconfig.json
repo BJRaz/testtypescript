@@ -3,8 +3,9 @@
         "target": "es5",
         "module": "commonjs",
         "sourceMap": false
-    }, 
-    "files": [
-        "index.d.ts"
-    ]
+    }
+    // , 
+    // "files": [
+    //     "index.d.ts"
+    // ]
 }

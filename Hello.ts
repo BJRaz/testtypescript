@@ -19,6 +19,12 @@ namespace Test
 
             s.callMe(StartUp.Call);
 
+            var o = new MyObservable();
+            o.addObserver(new TestObserver());
+
+            o.notifyObservers("BRAIN");
+
+
         }
 
         getA() : any {

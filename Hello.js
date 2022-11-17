@@ -13,6 +13,9 @@ var Test;
             var s = new StartUp(1);
             console.log(s.getA());
             s.callMe(StartUp.Call);
+            var o = new MyObservable();
+            o.addObserver(new TestObserver());
+            o.notifyObservers("BRAIN");
         };
         StartUp.prototype.getA = function () {
             return this.a;
@@ -22,5 +25,6 @@ var Test;
         };
         return StartUp;
     }());
+    Test.StartUp = StartUp;
     StartUp.Main();
 })(Test || (Test = {}));
